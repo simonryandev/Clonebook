@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(202, 202, 231, 0.293);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  margin-left: 15%;
+  margin-top: 12%;
+}
+
+img {
+  width: 350px;
+}
+
+p {
+  font-size: 25px;
+  margin-left: 35px;
+}
+
+.form-div {
+  background-color: #fff;
+  width: 400px;
+  height: 340px;
+  margin-left: 240px;
+  margin-top: 150px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+  border-style: double;
+}
+
+.to-enter, .button-new-account {
+  border: 0;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.to-enter {
+  background-color: #1877F2;
+  font-size: 20px;
+}
+
+.to-enter:hover {
+  background-color: #388bf7;
+}
+
+.button-new-account {
+  background-color: #1bc543;
+}
+
+.button-new-account:hover {
+  background-color: #2ead4c;
+}
+
+.forgot-password, .create-page {
+  margin-top: 12px;
+  text-decoration: none;
+  color: #1877F2;
+  font-size: 17px;
+}
+
+.forgot-password:hover, .create-page:hover {
+  text-decoration: underline;
+}
+
+hr {
+  background-color: transparent; 
+  margin: 20px 0;            
+  width: 100%;                
+}
+
+.description {
+  font-size: 17px;
+  margin-top: 35px;
+}
+
+footer {
+  background-color: #fff;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.portuguese {
+  color: rgb(149, 149, 149);
+  font-size: 13px;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 5px;
+  font-size: 13px;
+  color: rgb(149, 149, 149);
+  cursor: pointer;
+}
+
+.more-languages {
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.copy {
+  font-size: 13px;
+  color: rgb(149, 149, 149);
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 200px;
+  }
+
+  .form-div {
+    width: 90%;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .button-new-account {
+    width: 100%;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-left: 15%;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  img {
+    width: 250px;
+  }
+
+  .form-div {
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  p {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .button-new-account {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    margin-left: 0;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .form-div {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  header {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  img {
+    width: 280px;
+  }
+
+  .form-div {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    font-size: 22px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .button-new-account {
+    width: 80%;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+}
